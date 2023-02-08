@@ -1,3 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@import "_reset";
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright_Yellow: hsl(71, 73%, 54%);
+$Light_Gray: hsl(204, 43%, 93%);
+$Grayish_Blue: hsl(218, 22%, 67%);
+
+
+html {
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $Light_Gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > * {
+    padding: 7.5%;
+}
+
+.card {
+    width: 60%;
+    border-radius: 5px;
+    overflow: hidden;
+    .join-section {
+        background-color: white;
+        h1 {
+            color: $Cyan;
+            font-size: 1.2rem;
+            padding-bottom: 3%;
+        }
+        strong {
+            color: $Bright_Yellow;
+            font-size: 0.9rem;
+        }
+        small {
+            color: $Grayish_Blue;
+            font-weight: 400;
+        }
+    }
+    .subscription-section {
+        background-color: $Cyan;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 1rem;
+        }
+        div {
+            padding-top: 3%;
+        }
+        strong {
+            font-size: 2rem;
+        }
+        small {
+            font-weight: 400;
+            font-size: 0.95rem;
+        }
+        button {
+            border-style: none;
+            background-color: $Bright_Yellow;
+            color: white;
+            margin-top: 10%;
+            padding: 5%;
+            border-radius: 5px;
+            box-shadow: 2px 5px 5px adjust-color($color: $Cyan, $hue: 0, $saturation: 0%, $lightness: -5%, $alpha: 1.0);
+        }
+    }
+    .about-section {
+        background-color: adjust-color($color: $Cyan, $hue: 0, $saturation: 0%, $lightness: 4%, $alpha: 1.0);
+        color: white;
+        padding-bottom: 5%;
+        h2 {
+            font-size: 1.1rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            font-weight: 400;
+            font-size: 0.85rem;
+            color: $Light_Gray;
+            opacity: 0.8;
+        }
+    }
+}
+
+
+p {
+    padding: 3% 0;
+}
+
+.see-through {
+    opacity: 0.5;
+}
+
 .attribution {
     font-size: 11px; text-align: center;
     a {
