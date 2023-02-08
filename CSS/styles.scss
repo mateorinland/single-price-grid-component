@@ -23,7 +23,7 @@ body {
 
 .card > * {
     max-width: 100%;
-    margin: 0 auto 0;
+    padding: 2rem;
 }
 
 .card {
@@ -36,7 +36,6 @@ body {
         background-color: white;
         grid-row: 1;
         grid-column: auto;
-        padding: 2rem;
         h1 {
             color: $Cyan;
             font-size: 1.2rem;
@@ -55,7 +54,6 @@ body {
         color: white;
         display: flex;
         flex-direction: column;
-        padding: 2rem 2.4rem;
         h2 {
             font-size: 1rem;
         }
@@ -79,7 +77,6 @@ body {
     .about-section {
         background-color: adjust-color($color: $Cyan, $hue: 0, $saturation: 0%, $lightness: 4%, $alpha: 1.0);
         color: white;
-        padding: 2rem 4rem;
         h2 {
             font-size: 1.1rem;
         }
@@ -98,8 +95,8 @@ body {
 
 @media only screen and (min-width: 1024px) {
     .card {
-      grid-template-columns: 1fr;
-      grid-template-rows: 40% 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, auto);
       max-width: 35rem;
       .join-section {
         grid-row: 1;
