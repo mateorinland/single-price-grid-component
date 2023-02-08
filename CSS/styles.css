@@ -87,7 +87,7 @@ body {
 
 .card > * {
   max-width: 100%;
-  margin: 0 auto 0;
+  padding: 2rem;
 }
 
 .card {
@@ -101,7 +101,6 @@ body {
   background-color: white;
   grid-row: 1;
   grid-column: auto;
-  padding: 2rem;
 }
 .card .join-section h1 {
   color: hsl(179deg, 62%, 43%);
@@ -120,7 +119,6 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 2rem 2.4rem;
 }
 .card .subscription-section h2 {
   font-size: 1rem;
@@ -144,7 +142,6 @@ body {
 .card .about-section {
   background-color: #2ec2c0;
   color: white;
-  padding: 2rem 4rem;
 }
 .card .about-section h2 {
   font-size: 1.1rem;
@@ -162,8 +159,8 @@ body {
 
 @media only screen and (min-width: 1024px) {
   .card {
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
     max-width: 35rem;
   }
   .card .join-section {
