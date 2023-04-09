@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./CSS/styles.css">
-  <title>Frontend Mentor | Single Price Grid Component</title>
-</head>
-<body>
-  <main class="card">
-    <section class="join-section">
-      <h1>Join our community</h1>
-      <p><strong>30-day, hassle-free money back guarantee</strong></p>
-      <p><small>Gain access to our full library of tutorials along with expert code reviews. 
-        Perfect for any developers who are serious about honing their skills.</small></p>
-    </section>
-    <section class="subscription-section">
-      <h2>Monthly Subscription</h2>
-      <div><strong>&dollar;29</strong> <small class="see-through">per month</small></div>
-      <p><small>Full access for less than &dollar;1 a day</small></p>
-      <button>Sign Up</button>
-    </section>
-    <section class="about-section">
-      <h2>Why Us</h2>
-      <ul>
-        <li>Tutorials by industry experts</li>
-        <li>Peer &amp; expert code review</li>
-        <li>Coding exercises</li>
-        <li>Access to our GitHub repos</li>
-        <li>Community forum</li>
-        <li>Flashcard decks</li>
-        <li>New videos every week</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <small class="attribution">
-      Coded by <a href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/">Mateo Rinland</a>.
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    </small>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Frontend Mentor challenge for web development. This one is a rectangular component
+      with three sections promoting a monthly suscription for an educational service."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body>
+    <main class="card">
+      <div class="info-container">
+        <h1 class="title">Join our community</h1>
+        <p class="promo-info">30-day, hassle-free money back guarantee</p>
+        <p class="additional-info">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing
+          their skills.
+        </p>
+      </div>
+      <div class="subscription-container">
+        <h2 class="secondary-title">Monthly Subscription</h2>
+        <div class="price-container">
+          <p class="price-info">&dollar;29</p>
+          <p class="period-info">per month</p>
+        </div>
+        <p class="access-info">Full access for less than &dollar;1 a day</p>
+        <button class="sign-up-button">Sign Up</button>
+      </div>
+      <div class="about-container">
+        <h2 class="secondary-title">Why Us</h2>
+        <ul class="perks-list">
+          <li class="list-item">Tutorials by industry experts</li>
+          <li class="list-item">Peer &amp; expert code review</li>
+          <li class="list-item">Coding exercises</li>
+          <li class="list-item">Access to our GitHub repos</li>
+          <li class="list-item">Community forum</li>
+          <li class="list-item">Flashcard decks</li>
+          <li class="list-item">New videos every week</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Coded by
+        <a
+          class="attribution-link"
+          href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/"
+          aria-label="Mateo Rinland's LinkedIn profile"
+          >Mateo Rinland</a
+        >. Challenge by
+        <a
+          class="attribution-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
