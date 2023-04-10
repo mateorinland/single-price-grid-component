@@ -1,7 +1,8 @@
 @import "_reset";
 
 $Cyan: hsl(179, 62%, 43%);
-$Bright_Yellow: hsl(71, 73%, 54%);
+$Bright_Yellow: #697b1a;
+//Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
 $Light_Gray: hsl(204, 43%, 93%);
 $Grayish_Blue: hsl(218, 22%, 67%);
 
@@ -15,27 +16,22 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 3rem;
-}
-
-.card > * {
-  max-width: 100%;
-  padding: 2rem;
+  padding: 4rem 1rem;
 }
 
 .card {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 18.9rem;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   overflow: hidden;
 }
 
 @media screen and (min-width: 62.5rem) {
   .card {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    max-width: 35rem;
+    max-width: 40rem;
   }
 }
 
@@ -43,33 +39,69 @@ body {
   background-color: white;
   grid-row: 1;
   grid-column: auto;
+  padding: 1.5rem;
 }
 
 @media screen and (min-width: 62.5rem) {
   .info-container {
     grid-row: 1;
     grid-column: 1 / 3;
+    padding: 2.5rem;
   }
 }
 
 .title {
-  color: $Cyan;
+  color: #25a09d;
+  //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
   font-size: 1.2rem;
 }
+
+@media screen and (min-width: 62.5rem) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
 .promo-info {
   color: $Bright_Yellow;
   font-size: 0.9rem;
+  margin: 1.5rem 0 1rem;
 }
+
+@media screen and (min-width: 62.5rem) {
+  .promo-info {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+  }
+}
+
 .additional-info {
-  color: $Grayish_Blue;
+  color: #6d7788;
+  //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
   font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 2;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .additional-info {
+    font-size: 0.95rem;
+  }
 }
 
 .subscription-container {
-  background-color: $Cyan;
+  background-color: #1b7572;
+  //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .subscription-container {
+    padding: 2.5rem;
+  }
 }
 
 .secondary-title {
@@ -87,9 +119,16 @@ body {
 }
 
 .period-info {
-  opacity: 0.5;
+  color: #efffff;
+  //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
   font-weight: 400;
   font-size: 0.95rem;
+}
+
+.access-info {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin: 0 0 1.8rem;
 }
 
 .sign-up-button {
@@ -98,10 +137,10 @@ body {
   background-color: $Bright_Yellow;
   color: white;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px
+  border-radius: 0.313rem;
+  box-shadow: 0.125rem 0.313rem 0.313rem
     adjust-color(
-      $color: $Cyan,
+      $color: #1d817e,
       $hue: 0,
       $saturation: 0%,
       $lightness: -5%,
@@ -110,30 +149,33 @@ body {
 }
 
 .about-container {
-  background-color: adjust-color(
-    $color: $Cyan,
-    $hue: 0,
-    $saturation: 0%,
-    $lightness: 4%,
-    $alpha: 1
-  );
+  background-color: #1d817e;
+  //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
   color: white;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .about-container {
+    padding: 2.5rem;
+  }
 }
 
 .perks-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 1rem 0 0;
 }
 
 .list-item {
   font-weight: 400;
   font-size: 0.85rem;
-  color: $Light_Gray;
-  opacity: 0.8;
+  color: #f0ffff;
+  //Replaced FrontendMentor's provided color for the one suggested by Accessibility Insights for color contrast concerns
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
 }
 
